@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    
+    int a,b;
+    
+    scanf("%d%d",&a,&b);
+    
+    int *pa = &a;
+    int *pb = &b;
+    
+    if(*pa > *pb){
+        printf("Maior endereço é o A com valor:%d\n",*pa);
+    }else{
+        printf("Maior endereço é o B com valor:%d\n",*pb);
+    }
+
+    return 0;
+}
